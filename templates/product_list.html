@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for i in s %}
+        <h1 style="color: red;">{{ i.title }}</h1>
+        <h2>{{ i.price }}</h2>
+        <img src="/media/{{ i.image }}" alt="" style="width:200px; height: 200px;">
+    {% endfor %}
+</body>
+</html>

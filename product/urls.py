@@ -8,6 +8,7 @@ router.register('category', views.CategoryViewSet)
 router.register('', views.ProductViewSet)
 
 urlpatterns = [
-    path('hello/', views.get_hello)
+    path('hello/', views.get_hello),
+    path('list/', views.ProductTemplateList.as_view())
 ]
 urlpatterns += router.urls
